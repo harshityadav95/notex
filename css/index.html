@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Css - Notex</title>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome.min.css" rel="stylesheet">
+        <link href="base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Notex</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../Javascript-ES6-Notes/" class="dropdown-item">Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../404/" class="dropdown-item">Java</a>
+</li>
+                                    
+<li>
+    <a href="../C%2B%2B/" class="dropdown-item">C/C++</a>
+</li>
+                                    
+<li>
+    <a href="../sql/" class="dropdown-item">SQL</a>
+</li>
+                                    
+<li>
+    <a href="../404/" class="dropdown-item">C#</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../markdownsyntax/" class="dropdown-item">MarkDown</a>
+</li>
+                                    
+<li>
+    <a href="../django/" class="dropdown-item">Django</a>
+</li>
+                                    
+<li>
+    <a href="../404/" class="dropdown-item">React</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">Git</a>
+</li>
+                                    
+<li>
+    <a href="../vimCheats/" class="dropdown-item">Vim</a>
+</li>
+                                    
+<li>
+    <a href="../Tools_Compilation/" class="dropdown-item">Tool Compilation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Garage <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../terminal_commands/" class="dropdown-item">Terminal</a>
+</li>
+                                    
+<li>
+    <a href="../Learning_System_Design/" class="dropdown-item">System Design</a>
+</li>
+                                    
+<li>
+    <a href="../thinkpad/" class="dropdown-item">Thinkpad</a>
+</li>
+                                    
+<li>
+    <a href="../Programming_Interview_Study_Plan/" class="dropdown-item">Interview</a>
+</li>
+                                    
+<li>
+    <a href="../Research/" class="dropdown-item">Research</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ai/ML <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ai_ml_index/" class="dropdown-item">Start</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">HandWritten <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../404/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../404/" class="dropdown-item">Writer</a>
+</li>
+                                    
+<li>
+    <a href="../404/" class="dropdown-item">Release Notes</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            
+            
+            <li class="nav-item" data-level="2"><a href="#change-the-color-of-the-button-on-hover-and-remain-that-way" class="nav-link">Change the color of the button on Hover and remain that way</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#create-movement-animation-using-css-animation" class="nav-link">Create Movement Animation using CSS Animation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#fade-the-element-as-it-moves" class="nav-link">Fade the element as it moves</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#iterating-animation-in-a-loop" class="nav-link">Iterating animation in a loop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#make-a-growing-and-shrinking-animation-by-scaling" class="nav-link">Make a growing and shrinking animation by scaling</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#animate-elements-of-css-at-different-rate" class="nav-link">Animate elements of CSS at different rate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#animate-multiple-elements-at-variable-rate" class="nav-link">Animate Multiple Elements at Variable Rate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#change-animation-speed-with-keyword" class="nav-link">Change Animation  speed with keyword</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#curve-animation-using-bezier-curves" class="nav-link">Curve Animation using Bezier Curves</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#the-viewport-is-a-users-visible-area-of-a-web-page-and-is-different-depending-on-the-device-used-to-access-the-site" class="nav-link">The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#make-an-responsive-images-using" class="nav-link">Make an Responsive Images using</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#make-typography-responsive" class="nav-link">Make Typography Responsive</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="keyframe-animation-change-color">Keyframe Animation change color</h3>
+<pre><code>&lt;style&gt;
+  div {
+    height: 50px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  #rect {
+  animation-name: rainbow;
+  animation-duration: 4s;
+  }
+  @keyframes rainbow
+  {
+    0% {
+        background-color: blue;
+    }
+    50% {
+      background-color: green
+    }
+    100% {
+      background-color: yellow;
+
+    }
+  }
+
+
+
+
+&lt;/style&gt;
+&lt;div id=&quot;rect&quot;&gt;&lt;/div&gt;
+
+
+</code></pre>
+
+<h3 id="change-button-color-with-hover-using-animation">Change button color with hover using animation</h3>
+<pre><code>&lt;style&gt;
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+  }
+  @keyframes background-color
+  {
+    100% {
+      background-color:#4791d0;
+    }
+
+  }
+
+&lt;/style&gt;
+
+&lt;button&gt;Register&lt;/button&gt;
+</code></pre>
+
+<h2 id="change-the-color-of-the-button-on-hover-and-remain-that-way">Change the color of the button on Hover and remain that way</h2>
+<pre><code>&lt;style&gt;
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    /* Only change code below this line */
+    animation-fill-mode:forwards;
+
+    /* Only change code above this line */
+  }
+  @keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+  }
+&lt;/style&gt;
+&lt;button&gt;Register&lt;/button&gt;
+
+</code></pre>
+
+<h2 id="create-movement-animation-using-css-animation">Create Movement Animation using CSS Animation</h2>
+<pre><code>&lt;style&gt;
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+      left:0px;
+
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+      left:25px;
+
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+      left:-25px;
+
+    }
+  }
+&lt;/style&gt;
+
+&lt;div id=&quot;rect&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<h2 id="fade-the-element-as-it-moves">Fade the element as it moves</h2>
+<pre><code>&lt;style&gt;
+
+  #ball {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    position: fixed;
+    left: 20%;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: fade;
+    animation-duration: 3s;
+
+  }
+
+  @keyframes fade {
+    50% {
+      left: 60%;
+      opacity:0.1;
+
+    }
+  }
+
+&lt;/style&gt;
+
+&lt;div id=&quot;ball&quot;&gt;&lt;/div&gt;
+
+</code></pre>
+
+<h2 id="iterating-animation-in-a-loop">Iterating animation in a loop</h2>
+<pre><code>&lt;style&gt;
+
+  #ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+&lt;/style&gt;
+&lt;div id=&quot;ball&quot;&gt;&lt;/div&gt;
+
+</code></pre>
+
+<h2 id="make-a-growing-and-shrinking-animation-by-scaling">Make a growing and shrinking animation by scaling</h2>
+<pre><code>&lt;style&gt;
+  .back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation-name: backdiv;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+  }
+
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+
+  }
+  .heart:after {
+    background-color: pink;
+    content: &quot;&quot;;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart:before {
+    background-color: pink;
+    content: &quot;&quot;;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+  @keyframes backdiv {
+    50% {
+      background: #ffe6f2;
+    }
+  }
+
+  @keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+  }
+
+&lt;/style&gt;
+&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;heart&quot;&gt;&lt;/div&gt;
+
+</code></pre>
+
+<h2 id="animate-elements-of-css-at-different-rate">Animate elements of CSS at different rate</h2>
+<pre><code>&lt;style&gt;
+  .stars {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  }
+
+  .star-1 {
+    margin-top: 15%;
+    margin-left: 60%;
+    animation-name: twinkle-1;
+    animation-duration: 1s;
+  }
+
+  .star-2 {
+    margin-top: 25%;
+    margin-left: 25%;
+    animation-name: twinkle-2;
+    animation-duration: 1s;
+  }
+
+  @keyframes twinkle-1 {
+    50% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes twinkle-2 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+  }
+&lt;/style&gt;
+
+&lt;div id=&quot;back&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;star-1 stars&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;star-2 stars&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<h2 id="animate-multiple-elements-at-variable-rate">Animate Multiple Elements at Variable Rate</h2>
+<pre><code>&lt;style&gt;
+  .stars {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  }
+
+  .star-1 {
+    margin-top: 15%;
+    margin-left: 60%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+  .star-2 {
+    margin-top: 25%;
+    margin-left: 25%;
+    animation-duration: 0.9s;
+    animation-name: twinkle;
+  }
+
+  .star-3 {
+    margin-top: 10%;
+    margin-left: 50%;
+    animation-duration: 1.1s;
+    animation-name: twinkle;
+  }
+
+  @keyframes twinkle {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+  }
+&lt;/style&gt;
+
+&lt;div id=&quot;back&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;star-1 stars&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;star-2 stars&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;star-3 stars&quot;&gt;&lt;/div&gt;
+
+</code></pre>
+
+<h2 id="change-animation-speed-with-keyword">Change Animation  speed with keyword</h2>
+<pre><code>&lt;style&gt;
+
+  .balls {
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #ball1 {
+    left:27%;
+    animation-timing-function: linear;
+
+  }
+  #ball2 {
+    left:56%;
+    animation-timing-function: ease-out;
+
+  }
+
+
+  @keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    100% {a
+      top: 249px;
+    }
+  }
+
+&lt;/style&gt;
+
+&lt;div class=&quot;balls&quot; id=&quot;ball1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;balls&quot; id=&quot;ball2&quot;&gt;&lt;/div&gt;
+
+</code></pre>
+
+<h2 id="curve-animation-using-bezier-curves">Curve Animation using Bezier Curves</h2>
+<pre><code>cubic-bezier(0.25, 0.25, 0.75, 0.75);
+</code></pre>
+
+<h2 id="the-viewport-is-a-users-visible-area-of-a-web-page-and-is-different-depending-on-the-device-used-to-access-the-site">The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.</h2>
+<p>Here's an example of a media query that returns the content when the device's width is less than or equal to 100px:</p>
+<pre><code>@media (max-width: 100px) { /* CSS Rules */ }
+</code></pre>
+
+<p>and the following media query returns the content when the device's height is more than or equal to 350px:</p>
+<pre><code>@media (min-height: 350px) { /* CSS Rules */ }
+</code></pre>
+
+<p>Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.</p>
+<pre><code>&lt;style&gt;
+  p {
+    font-size: 20px;
+  }
+
+  /* Only change code below this line */
+@media (max-height: 800px) { p {
+    font-size: 10px;
+  } }
+  /* Only change code above this line */
+&lt;/style&gt;
+</code></pre>
+
+<h2 id="make-an-responsive-images-using">Make an Responsive Images using</h2>
+<p>The <code>max-width</code> of <code>100%</code> will make sure the image is never wider than the container it is in, and the <code>height</code> of <code>auto</code> will make the image keep its original aspect ratio.</p>
+<pre><code>&lt;style&gt;
+.responsive-img {
+    max-width: 100%;
+  height: auto;
+
+
+}
+
+img {
+  width: 600px;
+}
+&lt;/style&gt;
+</code></pre>
+
+<h2 id="make-typography-responsive">Make Typography Responsive</h2>
+<p>The four different viewport units are:</p>
+<ul>
+<li><code>vw</code> (viewport width): <code>10vw</code> would be 10% of the viewport's width.</li>
+<li><code>vh</code> (viewport height): <code>3vh</code> would be 3% of the viewport's height.</li>
+<li><code>vmin</code> (viewport minimum): <code>70vmin</code> would be 70% of the viewport's smaller dimension (height or width).</li>
+<li><code>vmax</code> (viewport maximum): <code>100vmax</code> would be 100% of the viewport's bigger dimension (height or width).</li>
+</ul>
+<p>Here is an example that sets a body tag to 30% of the viewport's width.</p>
+<pre><code>body { width: 30vw; }
+</code></pre>
+
+<pre><code>&lt;style&gt;
+h2 {width:80vw;}
+p {width:75vmin}
+&lt;/style&gt;
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

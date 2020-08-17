@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Data Structure and Algorithm - Notex</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Notex</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../../Javascript-ES6-Notes/" class="dropdown-item">Javascript</a>
+</li>
+                                    
+<li>
+    <a href="../../404/" class="dropdown-item">Java</a>
+</li>
+                                    
+<li>
+    <a href="../../C%2B%2B/" class="dropdown-item">C/C++</a>
+</li>
+                                    
+<li>
+    <a href="../../sql/" class="dropdown-item">SQL</a>
+</li>
+                                    
+<li>
+    <a href="../../404/" class="dropdown-item">C#</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../markdownsyntax/" class="dropdown-item">MarkDown</a>
+</li>
+                                    
+<li>
+    <a href="../../django/" class="dropdown-item">Django</a>
+</li>
+                                    
+<li>
+    <a href="../../404/" class="dropdown-item">React</a>
+</li>
+                                    
+<li>
+    <a href="../../git/" class="dropdown-item">Git</a>
+</li>
+                                    
+<li>
+    <a href="../../vimCheats/" class="dropdown-item">Vim</a>
+</li>
+                                    
+<li>
+    <a href="../../Tools_Compilation/" class="dropdown-item">Tool Compilation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Garage <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../terminal_commands/" class="dropdown-item">Terminal</a>
+</li>
+                                    
+<li>
+    <a href="../../Learning_System_Design/" class="dropdown-item">System Design</a>
+</li>
+                                    
+<li>
+    <a href="../../thinkpad/" class="dropdown-item">Thinkpad</a>
+</li>
+                                    
+<li>
+    <a href="../../Programming_Interview_Study_Plan/" class="dropdown-item">Interview</a>
+</li>
+                                    
+<li>
+    <a href="../../Research/" class="dropdown-item">Research</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ai/ML <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ai_ml_index/" class="dropdown-item">Start</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">HandWritten <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../404/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../404/" class="dropdown-item">Writer</a>
+</li>
+                                    
+<li>
+    <a href="../../404/" class="dropdown-item">Release Notes</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#data-structure-and-algorithm" class="nav-link">Data Structure and Algorithm</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#resource" class="nav-link">Resource</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#the-sol-project" class="nav-link">The Sol Project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="data-structure-and-algorithm">Data Structure and Algorithm</h1>
+<h4 id="-back-to-home"><a href="../Readme.md">&lt;--Back to Home</a></h4>
+<p>My Profile on Various Websites
+* <a href="https://www.codechef.com/users/inanimate14">CodeChef</a>
+* <a href="https://www.hackerearth.com/@harshityadav95">HackerEarth</a>
+* <a href="https://www.interviewbit.com/profile/harshityadav95">InterviewBit</a>
+* <a href="https://leetcode.com/harshityadav95/">LeetCode</a>
+* <a href="https://auth.geeksforgeeks.org/user/harshityadav95/profile">GeeksforGeeks</a></p>
+<h2 id="resource">Resource</h2>
+<ul>
+<li><a href="https://algs4.cs.princeton.edu/home/">Book, Algorithm 4</a></li>
+</ul>
+<h1 id="the-sol-project">The Sol Project</h1>
+<p>Main Link :(https://github.com/harshityadav95/Notex/wiki) </p>
+<h4 id="week-1">Week 1</h4>
+<p>Mathematics
+Basic Recursion
+Arrays: Searching, Sorting, Deleting, Shift, Rotation, Prefix Sum...</p>
+<h4 id="week-2">Week 2</h4>
+<p>Bit Magic
+Matrix: Search, Delete, Insert, Rotate...
+Searching: Linear Search, Binary Search, Two pointer approach...</p>
+<h4 id="week-3">Week 3</h4>
+<p>Sorting: QuickSort and its variation, Mergesort, Counting sort, Insertion Sort, Heap Sort, Comparator
+Hashing: Different Types of Hashing Techniques, Collision resolution Techniques, Hashing Questions</p>
+<h4 id="week-4">Week 4</h4>
+<p>Strings: Basic Operations, Naive Pattern Search, Other searching algorithms.
+Linked Lists: Singly Linked List, Doubly Linked Lists, Circular Linked List, Skip List Doubly Circular</p>
+<h4 id="week-5">Week 5</h4>
+<p>Stacks: Stack Operations, Implementation, Different Questions
+Queues: Queue Operations, Implementation, Different Questions, Deque Operations, Implementation, Different Questions.</p>
+<h4 id="week-6">Week 6</h4>
+<p>Tree: Binary Tree, Tree Traversal
+Binary Search Tree: Search, Insert, Delete and other important questions, AVL (Basic Introduction)</p>
+<h4 id="week-7">Week 7</h4>
+<p>Heaps: Binary Heap, Questions based on heaps.
+Graphs: Types of Graphs, BFS, DFS, Cycle Detection, Connected Components, Bipartite Graph.</p>
+<h4 id="week-8">Week 8</h4>
+<p>Recursion and Backtracking: Backtracking questions, n queen, rat, knight etc.
+Dynamic Programming: Properties (Top Down, Bottom Up, Optimal Substructures, Overlapping Subproblems).</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
